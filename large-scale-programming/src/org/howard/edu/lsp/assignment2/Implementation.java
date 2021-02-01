@@ -2,13 +2,35 @@ package org.howard.edu.lsp.assignment2;
 
 import java.util.ArrayList;
 
+
+
+
+
+/**
+ * 
+ * @author alyssasullins
+ * Will find combinations within the array that add
+ * up to the target sum. Will check to see if a single index in array adds up to the sum,
+ * Then will check if two indexes will add up to the target sum.
+ * Then will check if three indexes will add up to the target sum.
+ * <p>
+ * Given an array 
+ */
 public class Implementation {
     ArrayList<Integer>total_combinations = new ArrayList<Integer>();
+    
+    /**
+     * Will output index of array, if the target sum is found at one index.
+     * 
+     * @param array param[] will hold the list of numbers 
+     * @param target_Sum is the target sum that will be searched through the array
+     * @return returns the combinations within the array that add up to the target sum.
+     */
+    
+    
 	public ArrayList<Integer> calculate_combinations(int[] param, int target_Sum)
 	{ 
-		/**
-		 * Will output index of array, if the target sum is found at one index
-		 */
+		
 		for(int j = 0; j < param.length; j++)
 		{
 			if(param[j]==target_Sum)
@@ -19,10 +41,12 @@ public class Implementation {
 		}
 		
 		/**
-		 * Will output the indexes of the array, if the target sum is found between two indexes. 
+		 * * Will output the indexes of the array, if the target sum is found between two indexes. 
 		 * "i" starts from the from of the array
 		 * "j" starts from the back of the array
 		 * Will add target values to a vector & output 
+		 * 
+		 * @param adds param[i] and param[j] which, when found a pair that adds to target sum, it will be added to an array and then outputted on the screen.
 		 */
 		for(int i = 0; i < param.length; i++)
 		{
@@ -38,7 +62,7 @@ public class Implementation {
 		} 
 		
 		/**
-		 * Will output the indexes of the array if the target sum is found within 3 indexes of the array
+		 * Will output the indexes of the array if found to be added up to the target sum
 		 */
 		for(int i = 0; i < param.length; i++)
 		{
