@@ -14,6 +14,10 @@ public class TargetSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		System.out.println("Input: 1, 2, 3, 4, 5, 6");
+		System.out.println("Target Sum: 6");
+		System.out.println("Sum combinations:");
+		
 		/**
 		 * The Check Combination will call an instance of the implementation class,
 		 * then a variable m is assigned to the method which will have an array of numbers
