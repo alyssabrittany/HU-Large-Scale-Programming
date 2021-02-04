@@ -76,12 +76,12 @@ public class TargetSum {
 	}
 
 }
-/**
- * Hard coded input:
- * VALUES: 1, 2, 3, 4, 5, 6
- * TARGET SUM: 6
+/*
+ * OUTPUT:
  * 
-OUTPUT:
+ * Input: 1, 2, 3, 4, 5, 6
+Target Sum: 6
+Sum combinations:
 [5]
 [0,4]
 [1,3]
@@ -90,4 +90,34 @@ OUTPUT:
 [0,1,2]
 [0,2,1]
 [1,1,1]
+
+Input: 4, 5, 3, 2, 2
+Target Sum: 4
+Sum combinations:
+[0]
+[3,4]
+[3,3]
+[4,4]
+[4,3]
+
+Input: 1, 1, 5, 3, 4
+Target Sum: 2
+Sum combinations:
+[0,1]
+[1,1]
+
+Input: 8, 5, 6, 4, 3, 1 
+Target Sum: 5
+Sum combinations:
+[1]
+[3,5]
+[5,3]
+[4,5,5]
+[5,4,5]
+[5,5,4]
+
+Input: 1, 1, 3, 2,4 
+Target Sum: 0
+Sum combinations:
+NONE
  */
