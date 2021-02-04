@@ -79,6 +79,8 @@ public class Implementation {
 				}
 			}
 		}
+		
+		
 		return total_combinations;
 	} 
 }

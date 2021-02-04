@@ -31,8 +31,48 @@ public class TargetSum {
 		 * @return will output different combinations that add up to the target sum.
 		 */
 		Implementation CheckComationation = new Implementation();
+		
+		/*
+		 * TEST ONE
+		 */
 		ArrayList<Integer> m =(CheckComationation.calculate_combinations(new int[] {1, 2, 3, 4, 5, 6}, 6));
-
+		System.out.println("");
+		
+		/*
+		 * TEST TWO
+		 */
+		System.out.println("Input: 4, 5, 3, 2, 2");
+		System.out.println("Target Sum: 4");
+		System.out.println("Sum combinations:");
+		ArrayList<Integer> n =(CheckComationation.calculate_combinations(new int[] {4, 5, 3, 2, 2}, 4));
+		
+		/*
+		 * TEST THREE
+		 */
+		System.out.println("");
+		System.out.println("Input: 1, 1, 5, 3, 4");
+		System.out.println("Target Sum: 2");
+		System.out.println("Sum combinations:");
+		ArrayList<Integer> o =(CheckComationation.calculate_combinations(new int[] {1, 1, 5, 3, 4}, 2));
+		
+		/*
+		 * TEST FOUR
+		 */
+		System.out.println("");
+		System.out.println("Input: 8, 5, 6, 4, 3, 1 ");
+		System.out.println("Target Sum: 5");
+		System.out.println("Sum combinations:");
+		ArrayList<Integer> q =(CheckComationation.calculate_combinations(new int[] {8, 5, 6, 4, 3, 1}, 5));
+		
+		/*
+		 * TEST FIVE
+		 */
+		System.out.println("");
+		System.out.println("Input: 1, 1, 3, 2,4 ");
+		System.out.println("Target Sum: 0");
+		System.out.println("Sum combinations:");
+		ArrayList<Integer> p =(CheckComationation.calculate_combinations(new int[] {1, 1, 3, 2,4}, 0));
+		
 	}
 
 }
