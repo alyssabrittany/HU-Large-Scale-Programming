@@ -1,5 +1,4 @@
 package org.howard.edu.lsp.assignment4;
-
 import java.util.*;
 
 /**
@@ -61,10 +60,6 @@ set2.removeItem(0);
 System.out.println("New smallest value in Set1 : " + set1.smallestelement());
 System.out.println("New smallest value in Set2 : " + set2.smallestelement());
 set1.clear();
-set2.clear();
-
-
-
-   }
-
+set2.clear(); 
+   } 
 }

@@ -119,5 +119,12 @@ class IntegerSetTest  {
 		set2.addItem(105);
 		set2.removeItem(105);
 		Assert.assertNotEquals(true, set2.contains(105)); 
+		
+		set1.addItem(199);
+		Assert.assertNotEquals(false, set2.contains(199)); 
+		
+		set1.removeItem(199);
+		Assert.assertNotEquals(true, set2.contains(199)); 
+		
 	}
 }
