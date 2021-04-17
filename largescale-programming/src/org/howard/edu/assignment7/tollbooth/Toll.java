@@ -2,13 +2,17 @@ package org.howard.edu.assignment7.tollbooth;
 
 import java.util.*;
 
-class Toll implements TollBooth {
-   Toll(){
+public class Toll implements TollBooth {
+	
+	int truckcount;
+	Truck list[];
+	
+   public Toll(){
        list=new Truck[2000];
        truckcount = 0;
    }
   
-   public void calculateToll(Truck T){
+   public int calculateToll(Truck T){
      System.out.println("*******Receipt************");
        list[truckcount]=T;
        int axles = T.getAxles();
@@ -16,12 +20,13 @@ class Toll implements TollBooth {
        int tollDue = 5*axles + 10*(Weight/1000);
        System.out.println("Axles: "+ axles);
        System.out.println("Truck's weight: "+ Weight + "kg" );
-       truckcount = truckcount + 1;
+       truckcount++;
        System.out.print("Amount due For truck "+ truckcount + " : ");
        System.out.println("$" + tollDue);
+       return tollDue;
    }
   
-   public void listTrucks(){
+   public Truck[] listTrucks(){
   
        System.out.println("Number of Trucks passed since last reset: "+truckcount);
        for(int i=0;i<truckcount;i++){
@@ -33,11 +38,12 @@ class Toll implements TollBooth {
            System.out.println("Axles: "+ axles);
            System.out.println("Truck's weight: "+ Weight + "kg" );
        }
+       return list;
    }
 
    public void DisplayData(){
        System.out.println("Total numbers of Trucks to pass this Toll: " + truckcount);
-       int total=0;
+       int total = 0;
        for(int i=0;i<truckcount;i++){
            Truck T=list[i];
            int axles = T.getAxles();
@@ -54,7 +60,6 @@ class Toll implements TollBooth {
        truckcount=0;
    }
 
-   int truckcount;
-   Truck list[];
+   
 }
 

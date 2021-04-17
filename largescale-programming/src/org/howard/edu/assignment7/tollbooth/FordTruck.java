@@ -1,7 +1,7 @@
 package org.howard.edu.assignment7.tollbooth;
 
-class FordTruck implements Truck {
-	   FordTruck(int axles, int weight){
+public class FordTruck implements Truck {
+	   public FordTruck(int axles, int weight){
 	       this.axles = axles;
 	       this.weight = weight;
 	   }

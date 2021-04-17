@@ -2,8 +2,8 @@ package org.howard.edu.assignment7.tollbooth;
 
 
 
-class DaewooTruck implements Truck {
-   DaewooTruck(int axles, int weight){
+public class DaewooTruck implements Truck {
+   public DaewooTruck(int axles, int weight){
        this.axles = axles;
        this.weight = weight;
    }

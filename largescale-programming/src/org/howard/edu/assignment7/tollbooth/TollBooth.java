@@ -3,7 +3,7 @@ import java.util.*;
 
 public interface TollBooth {
    public void DisplayData();
-   public void calculateToll(Truck T);
+   public int calculateToll(Truck T);
    public void reset();
-   public void listTrucks();
+   public Truck[] listTrucks();
 }
